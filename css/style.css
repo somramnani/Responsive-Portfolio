@@ -189,8 +189,9 @@ footer{
 /***********Form Styles ***********/
 
 #subject{
-    height:100px;
+	height:100px;
 }
+   
 
  select, textarea {
     width: 100%;
@@ -228,11 +229,11 @@ footer{
     padding: 10px;
 } 
 
-.image {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  .image {
+  	opacity: 1;
+  	display: block;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
 }
 
 .container_portfolio:hover .image {
@@ -263,7 +264,7 @@ footer{
     font-size: 15px;
     padding: 10px 25px;
   }
- 
+
 
   /* Perrucci Media Hover Style */
  
@@ -303,6 +304,237 @@ footer{
 
   
   .container_portfolio:hover .middle2 {
-    opacity: 1;
+	  opacity: 1;
   }
   
+ /***********Media Queries***********/
+ 
+ 
+ @media only screen and (max-width: 980px){
+  
+  /* Moves the navbar to the right for all the pages */  
+	#navbar{
+	  	transform: translate(0em, -2em);
+  	}
+	
+   /* Moves the name in the header to the right */
+   #titleName{
+     	left: 1em;
+	}
+	
+	.wrapper {
+		/* Setting the placement of the text  */
+		width:35em;
+		height: auto;
+		padding: 10px;
+		transform: translate(-7em,20px);
+	}
+
+	/* Home Page Styles for 980px */
+	
+	.aboutPageInformation{
+		height: 5em;
+		padding: 0px;
+		font-size: 15px;
+	}
+
+	.mobilelook1 {
+		padding-top: 9em;
+		padding-bottom: 0em;
+	}
+	#aboutMeTitle{
+		font-size: 2em;
+	}
+
+	/* Portfolio Styles for 980px */
+	
+  
+  	#perrucciMediaPic{
+	  	height: 100px;
+	 	width: auto;
+	  	transform: translateX(14em) translateY(-10em);
+  	}
+  
+	#rpsImage{
+	  height: 170px;
+	  width: auto;
+	  transform: translateX(9em) translateY(-4em);    
+	}
+	
+	.text{
+	  font-size: 12px;
+	}
+
+/* Demarest Pizzeria Hover Style Text Placement */
+	.middle {
+    	transform: translate(-80%, -60%);
+		-ms-transform: translate(-80%, -60%);
+	}
+ 
+  /* Perrucci Media Hover Style Text Placement  */
+	.middle1 {
+		transform: translate(12em, -13em);
+	  	-ms-transform: translate(7em, -13em);
+	}  
+	
+	/* RPS Hover Style Text Placement */
+	 .middle2 {
+		transform: translate(4em, -8em);
+		-ms-transform: translate(28em, -24em);
+	}
+
+	/* Contact Page 980px */
+
+}
+
+
+@media only screen and (max-width: 768px){
+	
+	#titleName {
+		/* Adjusting the placement of the title name in the header */
+		left:0em;
+	}
+	
+	.wrapper{
+		transform: translate(0em, 2em);
+		padding-bottom: 0em;
+		width: 40em;
+	}
+	#aboutMeTitle, #contactPageTitle{
+		font-size: 2em;
+		padding: 0px;
+		padding-bottom: 20px;
+	}
+	.mobilelook1{
+		padding-top: 6em;
+	}
+
+	/* Projects Page */
+	
+	/* Demarest Pizzeria Project */
+	#DemPizzaLogoPic{
+      	height: 150px;
+		  width: auto;  	    
+	}
+
+	/* Demarest Pizzeria Hover Style Text Placement */
+	.middle {
+		transform: translate(-100%, -60%);
+		-ms-transform: translate(-100%, -60%);
+	}
+	
+	/* Perruci Media */
+	
+	#perrucciMediaPic{
+		height: 100px;
+	   	width: auto;
+		transform: translateX(15em) translateY(-8em);
+	}
+
+	/* Perrucci Media Hover Style Text Placement  */
+	.middle1 {
+		transform: translate(10em, -11em);
+		-ms-transform: translate(10em, -11em);
+	}  
+	
+	/* RPS */
+  	#rpsImage{
+		height: 130px;
+		width: auto;
+		transform: translateX(12em) translateY(-5em);  
+		padding: 0em;  
+	  }
+	  /* RPS Hover Style Text Placement */
+	.middle2 {
+		transform: translate(4em, -8em);
+		-ms-transform: translate(4em, -8em);;
+  
+	}
+	
+	/* Contact Page */
+
+  
+}
+
+
+@media only screen and (max-width: 640px){
+	header{
+		position: static;
+		padding: 50px;
+	
+	}
+	#navbar{
+		transform: translate(-6em, 1em);
+	}
+	#titleName {
+		/* Adjusting the placement of the title name in the header */
+		margin: 0;
+		padding: 0;
+		top: -1em;
+		left:5em;
+		width: 100%;
+		padding: 30px;
+	}
+
+	.wrapper{
+		width: 35em;
+	}
+	#pictureOfSom{
+		float: none;
+		width: 15em;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aboutPageInformation{
+		font-size: 10px;
+	}
+	.mobilelook1{
+		padding-top: 2em;
+	}
+	
+/* Demarest Pizzeria Project */
+	#DemPizzaLogoPic{
+    height: 10em;
+	width: auto; 
+	transform: translate(11em, -2em);    
+}
+
+/* Demarest Pizzeria Hover Style Text Placement */
+	.middle {
+		transform: translate(3em, -100%);
+		-ms-transform: translate(-100%, -60%);
+	}
+
+/* Perruci Media */
+
+	#perrucciMediaPic{
+		height: 100px;
+		width: auto;
+
+		transform: translateX(6em) translateY(0em);
+	}
+
+/* Perrucci Media Hover Style Text Placement  */
+	
+	.middle1 {
+		transform: translate(3em, -3em);
+	
+	}  
+
+/* RPS */
+	#rpsImage{
+		height: 150px;
+		width: auto;
+		transform: translateX(9em) translateY(0em);  
+	 
+	}
+ /* RPS Hover Style Text Placement */
+	.middle2 {
+		transform: translate(3em, -3em);
+		
+
+	}	
+
+}
